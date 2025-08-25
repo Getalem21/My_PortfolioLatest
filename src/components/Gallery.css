@@ -1,0 +1,50 @@
+.galleryContainer{
+    padding:0;
+    text-align: center;
+}
+.gallery-h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.gallery-item {
+    background-color: #fff; /* Background color for the card */
+    border: 1px solid #ccc; /* Optional: border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    padding: 10px; /* Padding inside the card */
+    height: 300px; /* Fixed height for the card */
+    width: 250px; /* Fixed width for the card */
+}
+
+.gallery-item img {
+    width: 100%; /* Full width of the card */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+.gallery-item h2 {
+    margin: 10px 0 5px; /* Space around the title */
+    font-size: 1.2em; /* Font size for the title */
+}
+
+.gallery-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9em; /* Font size for the description */
+    text-align: center; /* Center align text */
+}
+.gallery-item:hover{
+    box-shadow: black;
+    transform: scale(1.05);
+    box-shadow:  4px 10px 20px rgba(7, 7, 7, 0.7);;
+
+}

@@ -1,0 +1,172 @@
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .homepage {
+        background-image: url('../Assets/Background.png');
+        /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    
+    .navbar {
+        position: fixed;
+        /* Makes navbar stay at top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        /* Semi-transparent background */
+        z-index: 1000;
+    }
+    
+    .Homelogo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .HomeLogoImage {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    
+    .Homelogo h1 {
+        color: rgb(246, 248, 247);
+        padding-left: 10px;
+        font: size 100px;
+        margin: 0;
+    }
+    
+    .Homelogo a {
+        text-decoration: none;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 15px;
+        font-size: 18px;
+        margin-right: 30px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #4CAF50;
+    }
+    /* Header text styles */
+    
+    .header {
+        margin-top: 100px;
+        /* Push content below navbar */
+    }
+    
+    .name {
+        color: #4CAF50;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+    
+    .say-hello,
+    .download-cv {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    
+    .skill {
+        font-weight: bold;
+        color: #20f908;
+        transition: opacity 0.9s ease;
+    }
+    /* ✅ Responsive Design */
+    
+    @media (max-width: 1024px) {
+        .nav-links li {
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .nav-links {
+            padding-right: 20px;
+        }
+        .HomeLogoImage {
+            width: 50px;
+            height: 50px;
+        }
+        .Homelogo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        .nav-links li {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+            font-size: 28px;
+            color: white;
+            margin-left: auto;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .HomeLogoImage {
+            width: 40px;
+            height: 40px;
+        }
+        .Homelogo h1 {
+            font-size: 18px;
+        }
+        .nav-links li {
+            font-size: 14px;
+        }
+    }

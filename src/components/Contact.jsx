@@ -3,12 +3,7 @@ import './Contact.css';
 
 const Contact = () => {
    
-    const [message, setMessage] = useState('');
-
-    const handleBtn = () => {
-    
-        // Optionally, you can also handle form submission here
-    };
+    const [message] = useState('');
 
     return (
       <>

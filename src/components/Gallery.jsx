@@ -1,9 +1,7 @@
 import React from 'react';
 import './Gallery.css'; // Import the CSS file
-import Background from '../Assets/Background.png';
 import NET1 from '../Assets/NET1.png';
 import NET2 from '../Assets/NET2.png';
-import NET3 from '../Assets/NET3.png';
 import B1 from '../Assets/B1.jpg';
 import B2 from '../Assets/B2.jpg';
 import Graphics1 from '../Assets/Graphics1.png';

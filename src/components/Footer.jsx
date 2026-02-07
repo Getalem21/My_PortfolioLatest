@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.css'; // Import the CSS for styling
 import myphoto from '../Assets/myphoto.png';
 import { Link } from 'react-router-dom';
-import { FaDownload } from 'react-icons/fa';
 
 const Footer = () => {
     return (

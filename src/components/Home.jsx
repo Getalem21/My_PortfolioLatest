@@ -1,7 +1,5 @@
 import React,{useEffect,useState} from 'react';
 import { Link } from 'react-router-dom';
-import styles from "./Home.css";
-import logo from '../Assets/logo3.png';
 const skills = ['Web Development','Docker,GitHub, Docker Hub ,Git ,Jenkins Peplins', 'UI/UX Design', 'JavaScript', 'React', 'CSS','PHP ,Laravel','cloud infrastructure maintenance', 'cloud servicce maintenance'];
 
 const Home = () => {

@@ -45,10 +45,10 @@ const Footer = () => {
                     <h4>Follow us</h4>
                     <div className="social-icons">
                         {/* Add your social media icons here */}
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Instagram</a>
+                        <a href="https://linkedin.com">Facebook</a>
+                        <a href="https://linkedin.com">Twitter</a>
+                        <a href="https://linkedin.com">LinkedIn</a>
+                        <a href="https://linkedin.com">Instagram</a>
                     </div>
                 </div>
   

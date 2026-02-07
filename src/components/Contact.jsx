@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import './Contact.css';
 
 const Contact = () => {
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
+   
     const [message, setMessage] = useState('');
 
     const handleBtn = () => {
-        setMessage(`Email: ${email}`); // Display the email entered
+    
         // Optionally, you can also handle form submission here
     };
 

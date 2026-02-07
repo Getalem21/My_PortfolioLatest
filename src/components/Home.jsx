@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 
 const skills = [
@@ -18,13 +18,11 @@ const Home = () => {
   const [skillIndex, setSkillIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  const contacts = [
-    "+251948758542",
-    "+251710986677",
-    "getalemberihun21@gmail.com",
-  ];
+  const contacts = useMemo(
+    () => ["+251948758542", "+251710986677", "getalemberihun21@gmail.com"],
+    []
+  );
   const [mycontact, setMycontact] = useState(contacts[0]);
-  const [index, setIndex] = useState(0);
 
   // Skill typing effect
   useEffect(() => {
@@ -42,19 +40,17 @@ const Home = () => {
           setCurrentSkill("");
         }, 1000);
       }
-    }, 200); // 200ms per character
+    }, 200);
 
     return () => clearInterval(charInterval);
   }, [skillIndex, charIndex]);
 
   // Contact rotation effect
   useEffect(() => {
+    let i = 0;
     const interval = setInterval(() => {
-      setIndex((prevIndex) => {
-        const newIndex = (prevIndex + 1) % contacts.length;
-        setMycontact(contacts[newIndex]);
-        return newIndex;
-      });
+      i = (i + 1) % contacts.length;
+      setMycontact(contacts[i]);
     }, 2000);
 
     return () => clearInterval(interval);
